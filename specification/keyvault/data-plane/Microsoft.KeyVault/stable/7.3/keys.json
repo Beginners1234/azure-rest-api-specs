@@ -42,7 +42,7 @@
             "required": true,
             "type": "string",
             "pattern": "^[0-9a-zA-Z-]+$",
-            "description": "The name for the new key. The system will generate the version name for the new key."
+            "description": "The name for the new key. The system will generate the version name for the new key. The value you provide may be copied globally for the purpose of running the service. The value provided should not include personally identifiable or sensitive information."
           },
           {
             "name": "parameters",
@@ -136,7 +136,7 @@
             "required": true,
             "type": "string",
             "pattern": "^[0-9a-zA-Z-]+$",
-            "description": "Name for the imported key."
+            "description": "Name for the imported key. The value you provide may be copied globally for the purpose of running the service. The value provided should not include personally identifiable or sensitive information."
           },
           {
             "name": "parameters",
@@ -1663,7 +1663,7 @@
         "public_exponent": {
           "type": "integer",
           "format": "int32",
-          "description": "The public exponent for a RSA key."
+          "description": "The public exponent for a RSA key. This applies only to keys created in a Managed HSM."
         },
         "key_ops": {
           "type": "array",
